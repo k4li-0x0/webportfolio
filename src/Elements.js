@@ -5,6 +5,8 @@ import logo from "./logo.svg";
 import ttscreenshot from "./images/ttscreenshot.jpg"
 import cppicon from "./images/cppicon.png";
 
+//eslint-disable jsx-a11y/anchor-is-valid
+
 function HeaderLink({ name, dst }) {
     return <a className="app-header-link hover-scale" href={`#${dst}`}>
         {name}
@@ -25,7 +27,7 @@ function SocialsBadge() {
 
 export function WHeader() {
     return <div className="app-header">
-        <a className="app-header-logo" href="#">
+        <a className="app-header-logo" href="#"> 
             <img alt="Logo" src={logo} width={36} height={36} />
         </a>
 
