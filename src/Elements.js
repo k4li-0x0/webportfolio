@@ -5,8 +5,6 @@ import logo from "./logo.svg";
 import ttscreenshot from "./images/ttscreenshot.jpg"
 import cppicon from "./images/cppicon.png";
 
-//eslint-disable jsx-a11y/anchor-is-valid
-
 function HeaderLink({ name, dst }) {
     return <a className="app-header-link hover-scale" href={`#${dst}`}>
         {name}
@@ -27,6 +25,7 @@ function SocialsBadge() {
 
 export function WHeader() {
     return <div className="app-header">
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a className="app-header-logo" href="#"> 
             <img alt="Logo" src={logo} width={36} height={36} />
         </a>
@@ -138,6 +137,7 @@ export function WFooter() {
                 </div>
             </div>
             <div className="footer-links">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a href="#">
                     Home
                 </a>
