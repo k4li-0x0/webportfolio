@@ -6,7 +6,7 @@ import ttscreenshot from "./images/ttscreenshot.jpg"
 import cppicon from "./images/cppicon.png";
 
 function HeaderLink({ name, dst }) {
-    return <a className="app-header-link hover-scale" href={`/#${dst}`}>
+    return <a className="app-header-link hover-scale" href={`#${dst}`}>
         {name}
     </a>
 }
@@ -25,7 +25,7 @@ function SocialsBadge() {
 
 export function WHeader() {
     return <div className="app-header">
-        <a className="app-header-logo" href="/#">
+        <a className="app-header-logo" href="#">
             <img alt="Logo" src={logo} width={36} height={36} />
         </a>
 
@@ -136,13 +136,13 @@ export function WFooter() {
                 </div>
             </div>
             <div className="footer-links">
-                <a href="/#">
+                <a href="#">
                     Home
                 </a>
-                <a href="/#projects">
+                <a href="#projects">
                     Projects
                 </a>
-                <a href="/#about">
+                <a href="#about">
                     About
                 </a>
             </div>
