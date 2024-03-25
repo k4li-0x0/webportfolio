@@ -137,6 +137,10 @@ a:visited {
   .footer-center>.app-header-socials {
     flex-direction: column !important;
   }
+
+  .title-bg {
+    background-position: 30vw !important;
+  }
 }
 
 .title-bg {
